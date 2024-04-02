@@ -24,7 +24,7 @@ class BlogIndexPage(Page):
 
 
 class BlogPage(Page):
-    date = models.DateField("Post date")
+    date = models.DateField("Дата события")
     intro = models.CharField(max_length=250)
     body = RichTextField(blank=True)
 

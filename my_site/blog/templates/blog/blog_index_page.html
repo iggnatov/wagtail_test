@@ -9,11 +9,13 @@
 
     <div class="intro">{{ page.intro|richtext }}</div>
     {% for post in blogpages %}
+        <div class="blog_card">
         {% with post=post.specific %}
             <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
             <p>{{ post.intro }}</p>
             {{ post.body|richtext }}
         {% endwith %}
+        </div>
     {% endfor %}
 
 
